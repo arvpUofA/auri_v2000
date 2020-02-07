@@ -1,2 +1,0 @@
-[0.012s] Invoking command in '/home/ramana/auri_v2000/build/au_core': /usr/bin/cmake /home/ramana/auri_v2000/catkin_ws/au_core -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ramana/auri_v2000/install/au_core
-[0.422s] Invoked command in '/home/ramana/auri_v2000/build/au_core' returned '1': /usr/bin/cmake /home/ramana/auri_v2000/catkin_ws/au_core -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ramana/auri_v2000/install/au_core
