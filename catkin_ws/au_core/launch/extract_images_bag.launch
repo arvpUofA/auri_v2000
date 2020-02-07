@@ -1,0 +1,40 @@
+<!--
+   Usage: `cwd` needs to use backticks (beside 1 on the keyboard)
+   ROS_HOME=`cwd` roslaunch au_core extract_images_bag.launch bag:=<bag_file>
+
+   Extracts image topic from rosbag to a video and a folder of images:
+   - @bag           bag file (absolute or relative to cwd)
+   - @fps           fps for the video file. Leave blank for similar rate to bag file
+   - @image         image topic
+   - @output_dir    directory images and video should be output. images are saved
+                    to ${output_dir}/images/ . Video is saved to ${output_dir}/
+   - @image_name    Name prefix for the image. Defaults to the name of the bag file
+                    Images are saved as ${image_name}%05d.jpg
+   
+   Example:
+   - @bag      ramming_camera_front_2019-05-11-16-30-42_0.bag (REQUIRED) (absolute
+                    or relative to cwd)
+   - @fps           (leaving it blank is suggested)
+   - @image         /cv_camera/image_rect_color_throttle
+   - @output_dir    /home/$USER/arvp/output (absolute or relative to cwd)
+   - @image_name    (leaving it blank is suggested)
+  -->
+
+<launch>
+    <arg name="bag" default="" />
+    <arg name="fps" default="" />
+    <arg name="image" default="/cv_camera/image_rect_color_throttle" />
+    <!-- <arg name="image" default="/bottom_cam/image_rect_color_throttle" /> -->
+    <arg name="output_dir" default="output" /> <!-- -->
+    <arg name="image_name" default="" /> <!-- -->
+
+    <node pkg="au_core" type="extract_images_from_bag.py" name="extract_images_bag"
+        output="screen" cwd="ROS_HOME" required="true">
+        <param name="bag"           value="$(arg bag)" />
+        <param name="fps"           value="$(arg fps)" />
+        <param name="image"         value="$(arg image)" />
+        <param name="output_dir"    value="$(arg output_dir)" />
+        <param name="image_name"    value="$(arg image_name)" />
+    </node>
+
+</launch>

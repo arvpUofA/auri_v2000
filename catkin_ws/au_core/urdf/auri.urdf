@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!-- use NED coord system or I will hunt you down -->
+<!-- please make sure all frame names correlate with params/frames.yaml-->
+<robot name="auri">
+  <link name="base_link">
+    <inertial>
+      <mass value="30" />
+      <inertia ixx="1.08" ixy="0" ixz="0" iyy="1.08" iyz="0" izz="1.08" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.142 0 0" />
+      <geometry>
+        <mesh filename="package://uwsim/robot/auri.stl" />
+      </geometry>
+      <material name="silver">
+        <color rgba=".9 .9 .9 1" />
+      </material>
+    </visual>
+  </link>
+
+  <link name="front_camera" />
+  <joint name="base_link_to_front_camera" type="fixed">
+    <parent link="base_link" />
+    <child link="front_camera" />
+    <origin xyz="0.27 -0.02 0.005" />
+  </joint>
+
+  <link name="bottom_camera" />
+  <joint name="base_link_to_bottom_camera" type="fixed">
+    <parent link="base_link" />
+    <child link="bottom_camera" />
+    <origin xyz="0.19582 -0.027089 0.0857" rpy="0 -1.570796 0" />
+  </joint>
+
+  <link name="base_dvl" />
+  <joint name="base_link_to_base_dvl" type="fixed">
+    <parent link="base_link" />
+    <child link="base_dvl" />
+    <origin xyz="-0.13344 0 0.30398" />
+  </joint>
+
+  <link name="base_depth" />
+  <joint name="base_link_to_base_depth" type="fixed">
+    <parent link="base_link" />
+    <child link="base_depth" />
+    <origin xyz="0.03179 0.070364 -0.08982" />
+  </joint>
+
+  <link name="base_imu" />
+  <joint name="base_link_to_base_imu" type="fixed">
+    <parent link="base_link" />
+    <child link="base_imu" />
+    <origin xyz="0.0642 -0.03575 0.0294" />
+  </joint>
+</robot>

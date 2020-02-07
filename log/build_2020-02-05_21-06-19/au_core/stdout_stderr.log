@@ -1,0 +1,33 @@
+[0.049s] -- The C compiler identification is GNU 7.4.0
+[0.089s] -- The CXX compiler identification is GNU 7.4.0
+[0.091s] -- Check for working C compiler: /usr/bin/cc
+[0.144s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.144s] -- Detecting C compiler ABI info
+[0.194s] -- Detecting C compiler ABI info - done
+[0.198s] -- Detecting C compile features
+[0.376s] -- Detecting C compile features - done
+[0.378s] -- Check for working CXX compiler: /usr/bin/c++
+[0.446s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.446s] -- Detecting CXX compiler ABI info
+[0.509s] -- Detecting CXX compiler ABI info - done
+[0.513s] -- Detecting CXX compile features
+[0.821s] -- Detecting CXX compile features - done
+[0.822s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[0.823s] -- Found ament_cmake_core: 0.7.4 (/opt/ros/dashing/share/ament_cmake_core/cmake)
+[0.849s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.849s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.056s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
+[1.071s] CMake Error at /usr/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:137 (message):
+[1.071s]   Could NOT find FastRTPS (missing: FastRTPS_INCLUDE_DIR FastRTPS_LIBRARIES)
+[1.071s] Call Stack (most recent call first):
+[1.071s]   /usr/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)
+[1.071s]   /opt/ros/dashing/share/fastrtps_cmake_module/cmake/Modules/FindFastRTPS.cmake:95 (find_package_handle_standard_args)
+[1.071s]   /opt/ros/dashing/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c-extras.cmake:7 (find_package)
+[1.071s]   /opt/ros/dashing/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_cConfig.cmake:38 (include)
+[1.071s]   /opt/ros/dashing/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+[1.072s]   /opt/ros/dashing/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:38 (include)
+[1.072s]   CMakeLists.txt:8 (find_package)
+[1.072s] 
+[1.072s] 
+[1.072s] -- Configuring incomplete, errors occurred!
+[1.072s] See also "/home/ramana/auri_v2000/build/au_core/CMakeFiles/CMakeOutput.log".

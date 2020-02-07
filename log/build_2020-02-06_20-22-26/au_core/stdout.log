@@ -1,0 +1,5 @@
+[0.051s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[0.052s] -- Found ament_cmake_core: 0.7.4 (/opt/ros/dashing/share/ament_cmake_core/cmake)
+[0.082s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.419s] -- Configuring incomplete, errors occurred!
+[0.419s] See also "/home/ramana/auri_v2000/build/au_core/CMakeFiles/CMakeOutput.log".

@@ -1,0 +1,19 @@
+[0.012s] Invoking command in '/home/ramana/auri_v2000/build/au_core': /usr/bin/cmake /home/ramana/auri_v2000/catkin_ws/au_core -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ramana/auri_v2000/install/au_core
+[0.051s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[0.052s] -- Found ament_cmake_core: 0.7.4 (/opt/ros/dashing/share/ament_cmake_core/cmake)
+[0.082s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.418s] CMake Error at /usr/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:137 (message):
+[0.418s]   Could NOT find FastRTPS (missing: FastRTPS_INCLUDE_DIR FastRTPS_LIBRARIES)
+[0.418s] Call Stack (most recent call first):
+[0.418s]   /usr/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)
+[0.418s]   /opt/ros/dashing/share/fastrtps_cmake_module/cmake/Modules/FindFastRTPS.cmake:95 (find_package_handle_standard_args)
+[0.418s]   /opt/ros/dashing/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c-extras.cmake:7 (find_package)
+[0.418s]   /opt/ros/dashing/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_cConfig.cmake:38 (include)
+[0.418s]   /opt/ros/dashing/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+[0.418s]   /opt/ros/dashing/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:38 (include)
+[0.418s]   CMakeLists.txt:8 (find_package)
+[0.419s] 
+[0.419s] 
+[0.419s] -- Configuring incomplete, errors occurred!
+[0.419s] See also "/home/ramana/auri_v2000/build/au_core/CMakeFiles/CMakeOutput.log".
+[0.422s] Invoked command in '/home/ramana/auri_v2000/build/au_core' returned '1': /usr/bin/cmake /home/ramana/auri_v2000/catkin_ws/au_core -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ramana/auri_v2000/install/au_core

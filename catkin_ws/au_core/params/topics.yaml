@@ -1,0 +1,118 @@
+# Test topic (do not change)
+/topic/test: "/test"
+
+# simulator topics
+/topic/sim/robot/pose: "/auri/pose"
+/topic/sim/robot/twist: "/auri/twist"
+/topic/sim/robot/pressure: "/auri/pressure"
+/topic/sim/robot/dvl: "/auri/dvl"
+/topic/sim/robot/state: "/auri/state"
+
+# Vision Topics
+/topic/camera/front/raw:  "/cv_camera/image_raw"
+/topic/camera/front/rect: "/cv_camera/image_rect_color"
+/topic/camera/front/info: "/cv_camera/camera_info"
+/topic/camera/roi:        "/roi"
+
+/topic/camera/bottom/raw:  "/bottom_cam/image_raw"
+/topic/camera/bottom/rect: "/bottom_cam/image_rect_color"
+/topic/camera/bottom/info: "/bottom_cam/camera_info"
+
+/topic/vision/track:        "/track"
+/topic/vision/front/debug:  "/vision/front/debug"
+/topic/vision/bottom/debug: "/vision/bottom/debug"
+
+/topic/ground_truth/front/roi: "/ground_truth/front/roi"
+/topic/ground_truth/bottom/roi: "/ground_truth/bottom/roi"
+
+# Motor Topics
+/topic/motor/raw:      "/motor/raw"
+/topic/motor/hor/base: "/motor/hor/baseSpeed"
+/topic/motor/hor/diff: "/motor/hor/differential"
+/topic/motor/ver/base: "/motor/ver/baseSpeed"
+/topic/motor/ver/diff: "/motor/ver/differential"
+/topic/motor/str/base: "/motor/str/baseSpeed"
+/topic/motor/str/diff: "/motor/str/differential"
+
+/topic/motor/effort: "/motor/effort"
+/topic/motor/feedback: "/motor/feedback"
+
+# Sensor Topics
+/topic/sensor/imu:   "/gx5_25/euler"
+/topic/sensor/imu_full:   "/gx5_25/imu"
+/topic/sensor/depth: "/ms5837/data"
+/topic/sensor/depth_calibrate: "/ms5837/calibration"
+/topic/sensor/dvl: "/dvl/data"
+/topic/sensor/temp: "/canros/msg/uavcan/equipment/air_data/StaticTemperature"
+/topic/sensor/pressure: "/canros/msg/uavcan/equipment/air_data/StaticPressure"
+/topic/sensor/battery_voltages: "/canros/msg/uavcan/equipment/power/BatteryInfo"
+/topic/sensor/led_colours: "/canros/msg/uavcan/equipment/indication/LightsCommand"
+/topic/sensor/sonar/output: "/sonar/output"
+/topic/sensor/sonar/debug: "/sonar/debug"
+/topic/sensor/sonar/ctrl: "/sonar/ctrl"
+/topic/sensor/sonar/freq: "/sonar/freq"
+/topic/sensor/sonar/marker: "/sonar/marker"
+
+/topic/sensor/odom_state: "/dynamics/odom"
+/topic/sensor/dynamics_state: "/dynamics/state"
+
+# Dynamics Topics
+/topic/dynamics/error: "/dynamics/error"
+/topic/dynamics/error_rate: "/dynamics/error_rate"
+/topic/dynamics/target: "/dynamics/target"
+/topic/dynamics/stability: "/dynamics/stability"
+/topic/dynamics/pos_reset: "/dynamics/reset/position"
+/topic/dynamics/yaw_reset: "/dynamics/reset/yaw"
+/topic/dynamics/target_reset: "/dynamics/reset/target"
+/topic/dynamics/teleport: "/dynamics/teleport"
+/topic/dynamics/reset: "/dynamics/reset"
+/topic/dynamics/integrals: "/dynamics/integrals"
+
+# Mapping Topics
+/topic/map/map: "/mapping/map"
+/topic/map/reload: "/mapping/reload"
+/topic/map/save: "/mapping/save"
+/topic/map/camera/front/debug: "/mapping/camera/front/debug"
+/topic/map/camera/bottom/debug: "/mapping/camera/bottom/debug"
+
+# Actuator Topics
+/topic/actuators/torpedo/arm: "/actuators/torpedo_arm"
+/topic/actuators/torpedo/fire: "/actuators/torpedo_fire"
+/topic/actuators/dropper: "/actuators/dropper_trigger"
+/topic/actuators/light: "/actuators/led_control"
+/topic/actuators/lamp: "/actuators/lamp"
+
+# Mission Start Button
+/topic/mission_start: "/mission_start"
+# GPIO
+/topic/gpio/led1: "/gpio/led1"
+/topic/gpio/led2: "/gpio/led2"
+
+# Node-Specific Topics
+/topic/front_servo/trigger: "/front_servo"
+/topic/front_servo/enable: "/front_servo/enable"
+
+/topic/lqr/enable: "/lqr_controller/enable"
+/topic/lqr/is_enabled: "/lqr_controller/is_enabled"
+
+/topic/teleop/enable: "/teleop_joy/joy_enable"
+/topic/teleop/is_enabled: "/teleop_joy/is_enabled"
+
+# Path planner
+/topic/move_base/action: "move_base"
+
+# Visual servo
+/topic/servo/action: "visual_servo"
+/topic/servo/disable: "visual_servo/disable"
+/topic/servo/x_state: "/visual_servo/x/state"
+/topic/servo/x_target: "/visual_servo/x/setpoint"
+/topic/servo/x_enable: "/visual_servo/x/pid_enable"
+/topic/servo/x_effort: "/visual_servo/x/control_effort"
+/topic/servo/y_state: "/visual_servo/y/state"
+/topic/servo/y_target: "/visual_servo/y/setpoint"
+/topic/servo/y_enable: "/visual_servo/y/pid_enable"
+/topic/servo/y_effort: "/visual_servo/y/control_effort"
+/topic/servo/z_state: "/visual_servo/z/state"
+/topic/servo/z_target: "/visual_servo/z/setpoint"
+/topic/servo/z_enable: "/visual_servo/z/pid_enable"
+/topic/servo/z_effort: "/visual_servo/z/control_effort"
