@@ -2,24 +2,34 @@ cmake_minimum_required(VERSION 3.10.2)
 
 project(au_core)
 
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_EXTENSIONS OFF)
-add_compile_options(-Wall -Wextra -Werror)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+#set(CMAKE_CXX_EXTENSIONS OFF)
+#add_compile_options(-Wall -Wextra -Werror)\
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
 
 find_package(ament_cmake REQUIRED)
-#find_package(rclpy REQUIRED)
 find_package(rclcpp REQUIRED)
-#find_package(rcllib REQUIRED
+find_package(rclcpp_components REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 #find_package(message_generation REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(angles REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+include_directories(include)
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+include_directories(${Eigen_INCLUDE_DIRS})
 find_package(Eigen REQUIRED)
 find_package(yaml-cpp)
-include_directories(${Eigen_INCLUDE_DIRS})
+
 
 
 #catkin_python_setup()
@@ -64,9 +74,9 @@ rosidl_generate_interfaces(
 
 
 
-ament_export_dependencies(message_runtime roslib)
-ament_export_include_directories(include)
-ament_export_libraries(utils)
+#ament_export_dependencies(message_runtime roslib)
+#ament_export_include_directories(include)
+#ament_export_libraries(utils)
 #catkin_package(
 #    INCLUDE_DIRS include
 #    LIBRARIES utils
@@ -79,7 +89,6 @@ ament_export_libraries(utils)
 
 #include_directories(
 #    include
-#    ${catkin_INCLUDE_DIRS}
 #)
 
 #Build for utils library
@@ -91,6 +100,9 @@ add_library(utils
     src/sigint_handler.cpp
     src/timeout_guard.cpp
     src/math_util.cpp)
+ament_target_dependencies(utils
+    "rclcpp"
+    "rclcpp_components")
 
 #add_dependencies(utils
 #    ${catkin_EXPORTED_TARGETS}

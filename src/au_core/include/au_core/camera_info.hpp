@@ -19,7 +19,7 @@
 
 #include <sstream>
 #include <rclcpp/rclcpp.hpp>
-#include <sensor_msgs/msg/camera_info.h>
+#include <sensor_msgs/msg/camera_info.hpp>
 
 namespace au_core {
 
@@ -32,7 +32,7 @@ struct CameraInfo {
   /** Contructor, initializes with 0s for all but @fov, which defaults to 120 */
   CameraInfo();
 
-  explicit CameraInfo(const sensor_msgs::CameraInfo& camera_info);
+  explicit CameraInfo(const sensor_msgs::msg::CameraInfo& camera_info);
 
   ~CameraInfo() = default;
 

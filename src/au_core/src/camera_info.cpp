@@ -1,4 +1,5 @@
 #include <au_core/camera_info.hpp>
+#include <sensor_msgs/msg/camera_info.hpp>
 
 namespace au_core {
 
@@ -10,7 +11,7 @@ CameraInfo::CameraInfo()
 // K = [ 0 fy cy]
 //     [ 0  0  1]
 
-CameraInfo::CameraInfo(const sensor_msgs::CameraInfo& camera_info)
+CameraInfo::CameraInfo(const sensor_msgs::msg::CameraInfo& camera_info)
     : fov(120),
       width(camera_info.width),
       height(camera_info.height),

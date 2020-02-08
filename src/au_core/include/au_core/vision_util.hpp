@@ -1,7 +1,7 @@
 #ifndef __AU_VISION_UTIL__
 #define __AU_VISION_UTIL__
 
-#include <au_core/camera_info.h>
+#include <au_core/camera_info.hpp>
 #include <string>
 
 namespace au_core {
