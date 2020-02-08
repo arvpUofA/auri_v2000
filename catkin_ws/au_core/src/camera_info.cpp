@@ -1,4 +1,4 @@
-#include <au_core/camera_info.h>
+#include <au_core/camera_info.hpp>
 
 namespace au_core {
 

@@ -17,8 +17,9 @@
 #ifndef __CAMERA_INFO_H__
 #define __CAMERA_INFO_H__
 
-#include <ros/ros.h>
-#include <sensor_msgs/CameraInfo.h>
+#include <sstream>
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/camera_info.h>
 
 namespace au_core {
 

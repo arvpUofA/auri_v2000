@@ -1,7 +1,8 @@
 #ifndef AU_CORE_SIGINT_HANDLER
 #define AU_CORE_SIGINT_HANDLER
 
-#include <ros/ros.h>
+#include <sstream>
+#include <rclcpp/rclcpp.hpp>
 #include <ros/xmlrpc_manager.h>
 #include <signal.h>
 

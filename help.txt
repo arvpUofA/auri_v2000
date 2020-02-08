@@ -1,0 +1,254 @@
+Starting >>> au_core
+--- stderr: au_core
+/home/ramana/auri_v2000/catkin_ws/au_core/src/sigint_handler.cpp:1:10: fatal error: au_core/sigint_handler.hpp: No such file or directory
+ #include <au_core/sigint_handler.hpp>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/utils.dir/src/sigint_handler.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/ramana/auri_v2000/catkin_ws/au_core/src/rolling_stats.cpp:1:10: fatal error: au_core/rolling_stats.hpp: No such file or directory
+ #include <au_core/rolling_stats.hpp>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ramana/auri_v2000/catkin_ws/au_core/src/loader_util.cpp:1:10: fatal error: au_core/loader_util.hpp: No such file or directory
+ #include <au_core/loader_util.hpp>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+/home/ramana/auri_v2000/catkin_ws/au_core/src/camera_info.cpp:1:10: fatal error: au_core/camera_info.hpp: No such file or directory
+ #include <au_core/camera_info.hpp>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+/home/ramana/auri_v2000/catkin_ws/au_core/src/vision_util.cpp:1:10: fatal error: au_core/vision_util.hpp: No such file or directory
+ #include <au_core/vision_util.hpp>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/utils.dir/src/loader_util.cpp.o] Error 1
+make[2]: *** [CMakeFiles/utils.dir/src/rolling_stats.cpp.o] Error 1
+/home/ramana/auri_v2000/catkin_ws/au_core/src/timeout_guard.cpp:1:10: fatal error: timeout_guard.hpp: No such file or directory
+ #include <timeout_guard.hpp>
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/utils.dir/src/camera_info.cpp.o] Error 1
+make[2]: *** [CMakeFiles/utils.dir/src/vision_util.cpp.o] Error 1
+make[2]: *** [CMakeFiles/utils.dir/src/timeout_guard.cpp.o] Error 1
+/home/ramana/auri_v2000/catkin_ws/au_core/src/math_util.cpp:1:10: fatal error: au_core/math_util.hpp: No such file or directory
+ #include <au_core/math_util.hpp>
+          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/utils.dir/src/math_util.cpp.o] Error 1
+make[1]: *** [CMakeFiles/utils.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_raw__functions.h:19:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_raw__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_raw__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/mc_raw__functions.c.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/map__functions.h:19:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/map__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/map__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/map__functions.c.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_status__functions.h:19:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_status__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_status__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/mc_status__functions.c.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_base_speed__functions.h:19:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_base_speed__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_base_speed__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/mc_base_speed__functions.c.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_diff__functions.h:19:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_diff__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_diff__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/mc_diff__functions.c.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/depth__functions.h:19:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/depth__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/depth__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_feedback__struct.h:27:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_feedback__functions.h:19,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_feedback__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/mc_status__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/depth__functions.c.o] Error 1
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/mc_feedback__functions.c.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/roi_array__functions.h:19:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/roi_array__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/roi_array__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/roi_array__functions.c.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/servo_angle__functions.h:19:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/servo_angle__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/servo_angle__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/servo_angle__functions.c.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/dynamics_state__functions.h:19:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/dynamics_state__functions.c:4:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_c/au_core/msg/dynamics_state__struct.h:22:10: fatal error: au_core/msg/header__struct.h: No such file or directory
+ #include "au_core/msg/header__struct.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/rosidl_generator_c/au_core/msg/dynamics_state__functions.c.o] Error 1
+make[1]: *** [CMakeFiles/FILES__rosidl_generator_c.dir/all] Error 2
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/mc_base_speed__type_support.cpp:7:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_base_speed__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/map__type_support.cpp:7:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/map__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+/home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/map_object__type_support.cpp:10:10: fatal error: au_core/msg/map_object__rosidl_typesupport_fastrtps_cpp.hpp: No such file or directory
+ #include "au_core/msg/map_object__rosidl_typesupport_fastrtps_cpp.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/mc_base_speed__type_support.cpp.o] Error 1
+/home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/led_command__type_support.cpp:10:10: fatal error: au_core/msg/led_command__rosidl_typesupport_fastrtps_cpp.hpp: No such file or directory
+ #include "au_core/msg/led_command__rosidl_typesupport_fastrtps_cpp.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/map__type_support.cpp.o] Error 1
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/map_object__type_support.cpp.o] Error 1
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/led_command__type_support.cpp.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/mc_diff__type_support.cpp:7:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_diff__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+/home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/kill_sig__type_support.cpp:10:10: fatal error: au_core/msg/kill_sig__rosidl_typesupport_fastrtps_cpp.hpp: No such file or directory
+ #include "au_core/msg/kill_sig__rosidl_typesupport_fastrtps_cpp.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_feedback__struct.hpp:34:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/mc_feedback__type_support.cpp:7:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_status__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/mc_status__type_support.cpp:7:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_status__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/depth__type_support.cpp:7:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/depth__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/mc_diff__type_support.cpp.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/mc_raw__type_support.cpp:7:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_raw__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/kill_sig__type_support.cpp.o] Error 1
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/mc_status__type_support.cpp.o] Error 1
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/depth__type_support.cpp.o] Error 1
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/mc_feedback__type_support.cpp.o] Error 1
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/mc_raw__type_support.cpp.o] Error 1
+/home/ramana/auri_v2000/build/au_core/rosidl_typesupport_cpp/au_core/msg/roi__type_support.cpp:10:10: fatal error: au_core/msg/roi__rosidl_typesupport_fastrtps_cpp.hpp: No such file or directory
+ #include "au_core/msg/roi__rosidl_typesupport_fastrtps_cpp.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_core/msg/roi__type_support.cpp.o] Error 1
+make[1]: *** [CMakeFiles/FILES__rosidl_typesupport_cpp.dir/all] Error 2
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/map__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/map__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/map__type_support.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/dynamics_stability__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/dynamics_stability__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/dynamics_stability__type_support.cpp.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/mc_base_speed__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_base_speed__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/roi_array__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/roi_array__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/mc_base_speed__type_support.cpp.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/mc_status__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_status__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/mc_raw__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_raw__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/roi_array__type_support.cpp.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/mc_diff__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_diff__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/mc_status__type_support.cpp.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/servo_angle__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/servo_angle__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_feedback__struct.hpp:34:0,
+                 from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/mc_feedback__type_support.cpp:12:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/mc_status__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/mc_raw__type_support.cpp.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/depth__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/depth__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/mc_diff__type_support.cpp.o] Error 1
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/servo_angle__type_support.cpp.o] Error 1
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/mc_feedback__type_support.cpp.o] Error 1
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/depth__type_support.cpp.o] Error 1
+In file included from /home/ramana/auri_v2000/build/au_core/rosidl_typesupport_introspection_cpp/au_core/msg/dynamics_state__type_support.cpp:12:0:
+/home/ramana/auri_v2000/build/au_core/rosidl_generator_cpp/au_core/msg/dynamics_state__struct.hpp:29:10: fatal error: au_core/msg/header__struct.hpp: No such file or directory
+ #include "au_core/msg/header__struct.hpp"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_core/msg/dynamics_state__type_support.cpp.o] Error 1
+make[1]: *** [CMakeFiles/FILES__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+make: *** [all] Error 2
+---
+Failed   <<< au_core	[ Exited with code 2 ]
+
+Summary: 0 packages finished [0.48s]
+  1 package failed: au_core
+  1 package had stderr output: au_core

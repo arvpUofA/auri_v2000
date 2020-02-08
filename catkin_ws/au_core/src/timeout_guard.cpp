@@ -1,4 +1,4 @@
-#include <au_core/timeout_guard.h>
+#include <au_core/timeout_guard.hpp>
 
 namespace au_core {
 

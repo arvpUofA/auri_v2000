@@ -21,6 +21,7 @@ find_package(Eigen REQUIRED)
 find_package(yaml-cpp)
 include_directories(${Eigen_INCLUDE_DIRS})
 
+
 #catkin_python_setup()
 
 ################################################
@@ -49,20 +50,17 @@ rosidl_generate_interfaces(
   msg/Dvl.msg
   msg/DvlStatus.msg
   msg/PingStatus.msg
-)
-
-rosidl_generate_interfaces(
-  FILES
   srv/ActuatorCommand.srv
   srv/Detection.srv
   srv/Tracking.srv
 )
 
-rosidl_generate_interfaces(
-  DEPENDENCIES
-  std_msgs
-  geometry_msgs
-)
+
+#rosidl_generate_interfaces(
+#  DEPENDENCIES
+  #std_msgs
+  #geometry_msgs
+#)
 
 
 
@@ -79,10 +77,10 @@ ament_export_libraries(utils)
 ## Build ##
 ###########
 
-include_directories(
-    include
-    ${catkin_INCLUDE_DIRS}
-)
+#include_directories(
+#    include
+#    ${catkin_INCLUDE_DIRS}
+#)
 
 #Build for utils library
 add_library(utils
@@ -93,11 +91,11 @@ add_library(utils
     src/sigint_handler.cpp
     src/timeout_guard.cpp
     src/math_util.cpp)
-add_dependencies(utils
-    ${catkin_EXPORTED_TARGETS}
-)
+
+#add_dependencies(utils
+#    ${catkin_EXPORTED_TARGETS}
+#)
 target_link_libraries(utils
-    ${catkin_LIBRARIES}
     yaml-cpp
 )
 
@@ -106,6 +104,7 @@ target_link_libraries(utils
 #############
 
 if(BUILD_TESTING)
+    find_package(ament_cmake_gtest REQUIRED)
     ament_add_gtest(rolling_stats_tests
             test/rolling_stats_tests.cpp)
     ament_target_dependencies(rolling_stats_tests
@@ -121,7 +120,7 @@ if(BUILD_TESTING)
             test/loader_util_tests.cpp)
     target_link_libraries(loader_util_tests utils)
 
-    ament_add_nosetests(test/loader_util_tests.py)
+    #ament_add_gtest(test/loader_util_tests.py)
 endif()
 
 #############
@@ -129,14 +128,18 @@ endif()
 #############
 
 install(TARGETS utils
-  ARCHIVE DESTINATION ${lib}
-  LIBRARY DESTINATION ${lib}
-  RUNTIME DESTINATION ${lib/${PROJECT_NAME}}
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
 
 ## Mark cpp header files for installation
 install(DIRECTORY include/${PROJECT_NAME}/
-  DESTINATION ${include/${PROJECT_NAME}}
+  DESTINATION include/${PROJECT_NAME}
   FILES_MATCHING PATTERN "*.h|*.hpp"
   PATTERN ".svn" EXCLUDE
 )
+
+ament_export_include_directories(include)
+ament_export_dependencies(std_msgs)
+ament_package()

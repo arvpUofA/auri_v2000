@@ -1,4 +1,4 @@
-#include <au_core/vision_util.h>
+#include <au_core/vision_util.hpp>
 #include <cmath>
 #include <cstdint>
 

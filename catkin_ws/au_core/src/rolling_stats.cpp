@@ -1,4 +1,4 @@
-#include <au_core/rolling_stats.h>
+#include <au_core/rolling_stats.hpp>
 #include <algorithm>
 #include <cmath>
 

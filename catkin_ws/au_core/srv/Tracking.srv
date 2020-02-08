@@ -10,6 +10,6 @@ uint8 SHUTDOWN=2
 
 uint8 camera
 uint8 enabled
-string detectorType
+string detector_type
 ---
 string message

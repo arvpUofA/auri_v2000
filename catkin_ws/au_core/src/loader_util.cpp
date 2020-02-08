@@ -1,4 +1,4 @@
-#include <au_core/loader_util.h>
+#include <au_core/loader_util.hpp>
 
 #include <ros/common.h>
 #include <iostream>

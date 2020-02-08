@@ -1,4 +1,4 @@
-#include <au_core/math_util.h>
+#include <au_core/math_util.hpp>
 
 #include <tf2/LinearMath/Matrix3x3.h>
 #include <tf2/LinearMath/Quaternion.h>

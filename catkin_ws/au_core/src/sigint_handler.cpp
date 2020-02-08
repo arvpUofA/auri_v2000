@@ -1,4 +1,4 @@
-#include <au_core/sigint_handler.h>
+#include <au_core/sigint_handler.hpp>
 
 namespace au_core {
 
