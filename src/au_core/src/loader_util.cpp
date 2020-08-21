@@ -1,6 +1,6 @@
 #include <au_core/loader_util.hpp>
 
-#include <ros/common.h>
+#include <rclcpp/rclcpp.hpp>
 #include <iostream>
 #include <regex>
 
@@ -14,7 +14,7 @@ YAML::Node load_file_safe(const std::string& path) {
 
 std::string au_core::load_topic(const std::string& topic_key) {
   static const std::string topics_path =
-      ros::package::getPath("au_core") + "/params/topics.yaml";
+      "au_core/params/topics.yaml";
   static const YAML::Node topics_root = load_file_safe(topics_path);
   try {
     return topics_root[topic_key].as<std::string>();
@@ -25,7 +25,7 @@ std::string au_core::load_topic(const std::string& topic_key) {
 
 std::string au_core::load_frame(const std::string& frame_key) {
   static const std::string frames_path =
-      ros::package::getPath("au_core") + "/params/frames.yaml";
+      "au_core/params/frames.yaml";
   static const YAML::Node frame_root = load_file_safe(frames_path);
 
   static const std::regex re{"/"};
@@ -54,7 +54,7 @@ struct YAML::convert<au_core::ObjectSize> {
     size.length = node["length"].as<double>();
 
     if (size.width <= 0 || size.height <= 0 || size.length <= 0) {
-      ROS_ERROR("Invalid object dimension detected");
+      // REG_ERR("Invalid object dimension detected");
       return false;
     }
 
@@ -62,10 +62,10 @@ struct YAML::convert<au_core::ObjectSize> {
   }
 };
 
-std::optional<au_core::ObjectSize> au_core::load_object_size(
+au_core::ObjectSize au_core::load_object_size(
     const std::string& obj_name, bool local) {
   static const std::string scene_objects_path =
-      ros::package::getPath("au_core") + "/params/scene_objects.yaml";
+      "au_core/params/scene_objects.yaml";
   static const YAML::Node objects_root = load_file_safe(scene_objects_path);
 
   YAML::Node obj_node = objects_root[obj_name];

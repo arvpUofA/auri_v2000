@@ -1,4 +1,4 @@
-#include <au_core/math_util.h>
+#include <au_core/math_util.hpp>
 #include <gtest/gtest.h>
 #include <cmath>
 #include <iostream>

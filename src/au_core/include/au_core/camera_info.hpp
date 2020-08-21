@@ -20,6 +20,7 @@
 #include <sstream>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/camera_info.hpp>
+using namespace std::chrono_literals;
 
 namespace au_core {
 
@@ -60,8 +61,8 @@ struct CameraInfo {
  * @param nh Nodehandle instance
  * @param info_topic Topic publishing the camera info
  */
-CameraInfo fetchCameraInfo(ros::NodeHandle& nh, std::string info_topic,
-                           double timeout = 5.0);
+CameraInfo fetchCameraInfo(rclcpp::Node::SharedPtr nh, std::string info_topic,
+                           std::chrono::duration<long int> timeout=5s);
 
 }  // namespace au_core
 

@@ -38,38 +38,13 @@ find_package(yaml-cpp)
 ## Declare ROS messages, services and actions ##
 ################################################
 
-#find_package(rosidl_default_generators REQUIRED)
-rosidl_generate_interfaces(
-  FILES
-  msg/LedCommand.msg
-  msg/Map.msg
-  msg/MapObject.msg
-  msg/MCRaw.msg
-  msg/MCDiff.msg
-  msg/MCBaseSpeed.msg
-  msg/MCStatus.msg
-  msg/MCFeedback.msg
-  msg/KillSig.msg
-  msg/Depth.msg
-  msg/Roi.msg
-  msg/RoiArray.msg
-  msg/ServoAngle.msg
-  msg/DynamicsState.msg
-  msg/DynamicsStability.msg
-  msg/MotorDisable.msg
-  msg/Dvl.msg
-  msg/DvlStatus.msg
-  msg/PingStatus.msg
-  srv/ActuatorCommand.srv
-  srv/Detection.srv
-  srv/Tracking.srv
-)
+
 
 
 #rosidl_generate_interfaces(
 #  DEPENDENCIES
-  #std_msgs
-  #geometry_msgs
+#  std_msgs
+#  geometry_msgs
 #)
 
 
@@ -97,7 +72,6 @@ add_library(utils
     src/loader_util.cpp
     src/rolling_stats.cpp
     src/vision_util.cpp
-    src/sigint_handler.cpp
     src/timeout_guard.cpp
     src/math_util.cpp)
 ament_target_dependencies(utils

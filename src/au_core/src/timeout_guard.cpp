@@ -17,7 +17,7 @@ TimeoutGuard::TimeoutGuard(clock::duration timeout,
 
 TimeoutGuard::TimeoutGuard(clock::duration timeout,
                            std::function<void(void)> alarm)
-    : TimeoutGuard(timeout, std::move(alarm), timeout){};
+    : TimeoutGuard(timeout, std::move(alarm), timeout){}
 
 TimeoutGuard::~TimeoutGuard() {
   live.store(false);

@@ -29,7 +29,7 @@ std::string load_frame(const std::string& frame_key);
 //! \param obj_name name of the scene object
 //! \param local If true, pulls object dimensions built by the team. If false,
 //! returns competition dimensions
-std::optional<ObjectSize> load_object_size(const std::string& obj_name,
+ObjectSize load_object_size(const std::string& obj_name,
                                            bool local);
 
 }  // namespace au_core
