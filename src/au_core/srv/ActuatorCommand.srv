@@ -1,0 +1,4 @@
+string direction    # direction, e.g. left, right
+---
+bool success        # indicate successful run of triggered service
+string message      # informational, e.g. for error messages

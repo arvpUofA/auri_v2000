@@ -1,0 +1,58 @@
+<!--
+   Record auris data into 3 separate rosbags:
+   - camera front
+   - camera bottom
+   - IMU, depth sensors, motors
+
+   The default configurations are made for bagging on the TX2
+  -->
+
+<launch>
+    <arg name="bag_name" default="auri" />
+    <arg name="path" default="/media/ssd" />
+    <arg name="record_front" default="true" />
+    <arg name="record_bottom" default="false" />
+
+    <!-- Bag frequency -->
+    <arg name="frequency" default="10" />
+
+    <!-- Throttle camera messages -->
+    <group ns="throttle">
+        <node pkg="topic_tools" type="throttle" name="cv_camera_image_rect_color"
+              args="messages /cv_camera/image_rect_color $(arg frequency)" />
+
+        <node pkg="topic_tools" type="throttle" name="cv_camera_info"
+              args="messages /cv_camera/camera_info $(arg frequency)" />
+
+        <node pkg="topic_tools" type="throttle" name="cv_bottom_cam_image_raw"
+              args="messages /bottom_cam/image_rect_color $(arg frequency)" />
+
+        <node pkg="topic_tools" type="throttle" name="cv_bottom_cam_camera_info"
+              args="messages /bottom_cam/camera_info $(arg frequency)" />
+    </group>
+
+    <!-- Front Camera -->
+    <node pkg="rosbag" type="record" name="rosbag_front_camera"
+          if="$(arg record_front)"
+          args="-o $(arg path)/$(arg bag_name)_camera_front.bag
+              /cv_camera/image_rect_color_throttle /cv_camera/camera_info_throttle --split --size=3072" />
+
+    <!-- Bottom Camera -->
+    <node pkg="rosbag" type="record" name="rosbag_bottom_camera"
+          if="$(arg record_bottom)"
+          args="-o $(arg path)/$(arg bag_name)_cam_bottom.bag
+              /bottom_cam/image_rect_color_throttle /bottom_cam/camera_info_throttle --split --size=3072" />
+
+    <!-- Sensors -->
+    <node pkg="rosbag" type="record" name="rosbag_sensors"
+        args="-o $(arg path)/$(arg bag_name)_sensors.bag
+              /ms5837/data /gx5_25/imu /dvl/data
+              /motor/raw /motor/feedback /motor/effort
+              /roi
+              /dynamics/state
+              /dynamics/target
+              /dynamics/stability
+              /mapping/map
+              /sonar/output"
+    />
+</launch>

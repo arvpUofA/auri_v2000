@@ -1,0 +1,20 @@
+test: 'test_frame' # do not change (for testing)
+world: 'world' # NEU (north east up)
+sim:           # NEU (north east up)
+    robot: 'auri/base_link'
+    dice1: 'diceOne'
+    dice2: 'diceTwo'
+    dice5: 'diceFive'
+    dice6: 'diceSix'
+# all frames below are in NED (north east down)
+map: 'map'
+odom: 'odom'
+robot: 'robot/base_link'
+camera:
+  front: 'robot/front_camera'
+  bottom: 'robot/bottom_camera'
+sensors:
+  dvl: 'robot/base_dvl'
+  depth: 'robot/base_depth'
+  imu: 'robot/base_imu'
+

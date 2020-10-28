@@ -1,0 +1,3 @@
+uint8 KILL_ENGAGE=0
+uint8 KILL_DISENGAGE=1
+uint8 kill

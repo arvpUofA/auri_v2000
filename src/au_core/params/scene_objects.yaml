@@ -1,0 +1,185 @@
+# unit is in meters
+dice1:
+  comp:
+    width: 0.229
+    height: 0.229
+    length: 0.229
+  local:
+    width: 0.4064
+    height: 0.4064
+    length: 0.4064
+dice2:
+  comp:
+    width: 0.229
+    height: 0.229
+    length: 0.229
+  local:
+    width: 0.4064
+    height: 0.4064
+    length: 0.4064
+dice5:
+  comp:
+    width: 0.229
+    height: 0.229
+    length: 0.229
+  local:
+    width: 0.4064
+    height: 0.4064
+    length: 0.4064
+dice6:
+  comp:
+    width: 0.229
+    height: 0.229
+    length: 0.229
+  local:
+    width: 0.4064
+    height: 0.4064
+    length: 0.4064
+# We have three separate post objects. Only post_left_19 and
+# post_right_19 are in the map, but post_19 is also needed
+# for the vision stack that treats the posts equally.
+post_19:
+  comp:
+    width: 0.0762
+    height: 1.524
+    length:  0.0762
+  local:
+    width: 0.083
+    height: 1.524
+    length: 0.083
+post_left_19:
+  comp:
+    width:  0.0762
+    height: 1.524
+    length:  0.0762
+  local:
+    width: 0.0726
+    height: 1.524
+    length: 0.0726
+post_right_19:
+  comp:
+    width:  0.0762
+    height: 1.524
+    length:  0.0762
+  local:
+    width: 0.0726
+    height: 1.524
+    length: 0.0726
+post_middle_19:
+  comp:
+    width: 0.0508
+    height: 0.6096
+    length: 0.0508
+  local:
+    width: 0.0508
+    height: 0.6096
+    length: 0.0508
+gate_19:
+  comp:
+    width: 3.048
+    height: 1.6002
+    length: 0.0762
+  local:
+    width: 3.24
+    height: 1.524
+    length: 0.083
+path_19:
+  comp:
+    width: 1
+    height: 1
+    length: 1
+  local:
+    width: 1
+    height: 1
+    length: 1
+jiangshi_buoy_19:
+  comp:
+    width: 0.635
+    height: 1.2573  
+    length: 0.0127
+  local:
+    width: 0.635
+    height: 1.2446
+    length: 0.045
+three_sided_buoy_19:
+  comp:
+    width: 0.754
+    height: 1.2573
+    length: 0.556
+  local:
+    width: 0.754
+    height: 1.2446
+    length: 0.556
+torpedo_target_19:
+  comp:
+    width: 0.635
+    height: 1.2573
+    length: 0.0127
+  local:
+    width: 0.635
+    height: 1.2827
+    length: 0.0377
+torpedo_heart_19:
+  comp:
+    width: 0.1016
+    height: 0.0940
+    length: 0.001
+  local:
+    width: 0.1524
+    height: 0.1524
+    length: 0.0377
+torpedo_covered_19:
+  comp:
+    width: 0.127
+    height: 0.2032
+    length: 0.001
+  local:
+    width: 0.1905
+    height: 0.2413
+    length: 0.0377
+torpedo_uncovered_19:
+  comp:
+    width: 0.127
+    height: 0.2032
+    length: 0.001
+  local:
+    width: 0.1905
+    height: 0.2413
+    length: 0.0377
+octagon_19:
+  comp:
+    width: 2.743
+    height: 0.0127
+    length: 2.743
+  local:
+    width: 2.743
+    height: 0.0127
+    length: 2.743
+# onboarding
+qual_gate:
+  comp:
+    width: 2
+    height: 1
+    length: 0.0762
+  local:
+    width: 2
+    height: 1
+    length: 0.0762
+qual_gate2:
+  comp:
+    width: 2
+    height: 1
+    length: 0.0762
+  local:
+    width: 2
+    height: 1
+    length: 0.0762
+qual_post:
+  comp:
+    width:  0.0762
+    height: 1.524
+    length:  0.0762
+  local:
+    width: 0.0726
+    height: 1.524
+    length: 0.0726
